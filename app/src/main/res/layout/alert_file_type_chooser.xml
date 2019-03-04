@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:gravity="start"
+>
+
+
+    <TextView
+            android:id="@+id/alertTitleTV"
+            android:layout_width="match_parent"
+            android:text="@string/choose_type_title"
+            android:padding="15dp"
+            android:gravity="center_horizontal|start"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+            android:id="@+id/alertButtonsLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="start"
+            android:layout_margin="20dp"
+            android:divider="@color/lightGray"
+            android:showDividers="middle"
+            android:layout_below="@id/alertTitleTV"
+    >
+
+
+        <Button
+                android:id="@+id/galleryButt"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_weight="1"
+                android:drawableStart="@mipmap/icon_gallery"
+                android:gravity="start|center_vertical"
+                android:layout_gravity="start"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:text="@string/gallery_title"
+                android:textSize="14sp"
+
+                android:textColor="@color/lightBlack"
+
+        />
+
+        <Button
+                android:id="@+id/fileButt"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_weight="1"
+                android:text="@string/file_title"
+                android:drawableStart="@mipmap/icon_file"
+                android:gravity="start|center_vertical"
+                android:layout_gravity="start"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:textSize="14sp"
+                android:textColor="@color/lightBlack"
+
+        />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

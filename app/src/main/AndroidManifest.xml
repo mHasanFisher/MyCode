@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="app.chatyar.com">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+            android:name="app.chatyar.com.Application.MyApp"
+            android:allowBackup="true"
+            android:icon="@mipmap/icon_main_logo"
+            android:label="@string/app_name"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme"
+
+            tools:ignore="GoogleAppIndexingWarning">
+
+        <service android:name="app.chatyar.com.ViewModel.Services.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <meta-data
+                android:name="io.fabric.ApiKey"
+                android:value="25b1ab7544fa2a4192430f79057016d3e915b23b"/>
+
+        <!--<service android:name=".ViewModel.Services.SocketService"/>-->
+
+
+        <!-- <receiver android:name=".ViewModel.BroadcastReceiver.NetChangeReceiver" tools:ignore="InnerclassSeparator"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.net.conn.CONNECTIVITY_CHANGE" tools:ignore="BatteryLife"/> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+
+        <activity
+                android:name="app.chatyar.com.View.Activities.MainActivity"
+                android:label="@string/app_name"
+                android:screenOrientation="portrait"
+                android:launchMode="singleTask"
+                android:theme="@style/AppTheme.NoActionBar">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN"/> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER"/> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+                android:name="app.chatyar.com.View.Activities.SigninActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name="app.chatyar.com.View.Activities.ChatActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar"
+                android:windowSoftInputMode="adjustResize|stateAlwaysHidden">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="app.chatyar.com.View.Activities.ChatActivity"/>
+        </activity>
+        <activity
+                android:name="app.chatyar.com.View.Activities.LuncherActivity"
+                android:theme="@style/AppTheme.NoActionBarNoNavigationNoStatus">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+                android:name="app.chatyar.com.View.Activities.ProfileInfoActivity"
+                android:screenOrientation="portrait">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="app.chatyar.com.View.Activities.ProfileInfoActivity"/>
+        </activity>
+        <activity android:name="app.chatyar.com.View.Activities.ChangePasswordActivity">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="app.chatyar.com.View.Activities.ChangePasswordActivity"/>
+        </activity>
+        <activity android:name="app.chatyar.com.View.Activities.EditOperatorInfoActivity">
+
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="app.chatyar.com.View.Activities.EditOperatorInfoActivity"/>
+        </activity>
+
+        <activity
+                android:name="com.yalantis.ucrop.UCropActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar"/>
+
+        <provider
+                android:name="app.chatyar.com.ViewModel.Classes.GenericFileProvider"
+                android:authorities="provider"
+                android:exported="false"
+                android:grantUriPermissions="true">
+            <meta-data
+                    android:name="android.support.FILE_PROVIDER_PATHS"
+                    android:resource="@xml/external_files"/>
+        </provider>
+
+
+    </application>
+
+</manifest>

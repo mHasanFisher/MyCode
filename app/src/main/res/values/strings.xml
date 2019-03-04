@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">چت یار</string>
+    <string name="title_all_chats">همه</string>
+    <string name="title_unread_chats">در انتظار پاسخ</string>
+    <string name="title_profile">تنظیمات</string>
+
+    <string name="app_description">سیستم گفتگوی آنلاین با مشتری</string>
+    <string name="username_title">ایمیل</string>
+    <string name="password_title">رمز عبور</string>
+    <string name="enter_button">ورود</string>
+    <string name="enter_with_demo">ثبت نام کنید</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="item_name">نام</string>
+    <string name="domain_name">دامنه</string>
+    <string name="date_text">تاریخ</string>
+    <string name="item_text">hello, this is a test message for testing maximum length of this text. i want to see how
+        native this test will be
+    </string>
+    <string name="item_unread_messages">0</string>
+    <string name="message_date">24 December</string>
+    <string name="message_send_text">سلام، حالت خوبه؟</string>
+    <string name="send_time">11:24</string>
+    <string name="receive_time">12:42</string>
+    <string name="message_receive_text">خوبم ممنون</string>
+    <string name="connection_status">Waiting for network …</string>
+    <string name="item_name_profile_info">اطلاعات</string>
+    <string name="item_name_profile_info_title">عنوان :</string>
+    <string name="alert_not_connected_to_net">لطفا اتصال دستگاه خود به اینترنت را بررسی کنید.</string>
+    <string name="alert_button_ok">باشه</string>
+    <string name="turn_on_off_text">Status</string>
+    <string name="edit_user_info_text">Edit User Information</string>
+    <string name="edit_pass_text">Edit Password</string>
+    <string name="log_out_text">Log out</string>
+    <string name="changeDomainToolTip">Change Domain</string>
+    <string name="exit_alert">Are you sure to log out from your account ?</string>
+    <string name="yes_exit">Yes</string>
+    <string name="no_exit">Not now</string>
+
+
+    <string name="waiting_for_network">"Waiting for network …"</string>
+    <string name="connecting">"Connecting …"</string>
+    <string name="updating">"Updating …"</string>
+    <string name="last_seen_recently">Last seen recently</string>
+    <string name="is_typing">is typing …</string>
+    <string name="current_pass_title">Current Password</string>
+    <string name="current_pass_repeate_title">Repeat Current Password</string>
+    <string name="new_pass_title">New Password</string>
+    <string name="change_pass_button">Change Password</string>
+    <string name="notification_is_on">Notification is ON</string>
+    <string name="notification_is_off">Notification is OFF</string>
+    <string name="operator_name">Operator Name</string>
+    <string name="edit_operator_button">Edit Operator</string>
+    <string name="first_name_title">First Name</string>
+    <string name="edit_username_title">Username</string>
+    <string name="file_name_tv">File Name</string>
+    <string name="file_size_tv">File Size KB</string>
+    <string name="emoji1"><![CDATA[&#128512;]]></string>
+    <string name="choose_type_title">انتخاب کنید</string>
+    <string name="gallery_title">گالری</string>
+    <string name="file_title">فایل</string>
+    <string name="sender_tv">Operator 1</string>
+    <string name="solved">پاسخ داده شده است.</string>
+    <string name="solve">هنوز پاسخ ندادید!</string>
+</resources>

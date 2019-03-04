@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layoutDirection="rtl"
+              android:layout_gravity="right"
+              android:gravity="right"
+              android:paddingRight="10dp"
+              android:paddingLeft="10dp"
+              android:paddingBottom="5dp"
+              android:paddingTop="5dp"
+              android:orientation="horizontal"
+              android:layout_height="wrap_content">
+
+
+    <LinearLayout
+
+            android:id="@+id/messageSendLL"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+
+        <LinearLayout
+
+                android:id="@+id/messageInnerSendLL"
+                android:layout_width="wrap_content"
+                android:layout_gravity="end"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|right"
+                android:layoutDirection="rtl"
+                android:minWidth="100dp"
+                android:minHeight="40dp"
+                android:orientation="vertical"
+                android:background="@drawable/background_message_send_selector"
+        >
+
+
+
+
+            <TextView
+                    android:id="@+id/sentText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginRight="15dp"
+                    android:lineSpacingExtra="5sp"
+                    android:text="@string/message_send_text"
+                    android:textSize="12sp"
+                    android:textColorLink="@color/darkBlue"
+                    android:autoLink="web"
+
+
+            />
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:layoutDirection="ltr"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:gravity="center_vertical|left"
+
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:id="@+id/senderTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="3"
+                        android:lines="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:padding="2dp"
+                        android:text="@string/sender_tv"
+                        android:textSize="9sp"
+                        android:textColor="@android:color/darker_gray"
+                        android:textStyle="bold"
+                        android:textColorLink="@android:color/darker_gray"
+
+                />
+
+
+                <TextView
+                        android:id="@+id/timeSent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_weight="3"
+                        android:gravity="center_vertical"
+                        android:padding="2dp"
+                        android:text="@string/send_time"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="10sp"/>
+
+
+                <ImageView
+                        android:id="@+id/tickSent"
+                        android:layout_width="13dp"
+                        android:layout_height="13dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1.3"
+                        android:scaleType="centerInside"
+                        android:src="@mipmap/icon_one_tick"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View android:layout_width="0dp"
+
+          android:layout_height="match_parent"
+          android:layout_weight="1"/>
+
+</LinearLayout>

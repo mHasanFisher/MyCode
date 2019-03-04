@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#306d9f</color>
+    <color name="colorPrimaryDark">#004270</color>
+    <color name="colorAccent">#690FD7</color>
+
+    <color name="colorPrimaryPix">#306d9f</color>
+    <color name="colorPrimaryLightPix">#690FD7</color>
+
+    <color name="white">#ffffff</color>
+    <color name="darkGray">#a4a4a4</color>
+    <color name="lightGray">#e2e2e2</color>
+
+    <color name="categoryBack">#f9f9f9</color>
+
+    <color name="pressed_menu_title_color">#a13b3b</color>
+    <color name="selected_menu_title_color">#64965d</color>
+    <color name="focused_menu_title_color">#397fb4</color>
+
+    <color name="redTrans">#87d10000</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="profileGray">#d3d3d3</color>
+
+    <color name="transparentGray">#a5a9a9a9</color>
+    <color name="lowTransparentGray">#55a9a9a9</color>
+
+    <color name="redBadge">#de1b1b</color>
+    <color name="orange">#e98700</color>
+    <color name="lightBlack">#000000</color>
+
+    <color name="green">#3cb421</color>
+
+    <color name="lightBlue">#2088b4</color>
+    <color name="darkBlue">#226191</color>
+
+    <color name="lightRed">#15ff0000</color>
+    <color name="veryLightBlue">#0B9EE1</color>
+    <color name="lightBluePressed">#7fa3b3</color>
+
+    <color name="backAvatar0">#7cc863</color>
+    <color name="backAvatar1">#faa875</color>
+    <color name="backAvatar2">#66aadd</color>
+    <color name="backAvatar3">#ee7bae</color>
+    <color name="backAvatar4">#c96cba</color>
+    <color name="backAvatar5">#6fc9cb</color>
+
+</resources>

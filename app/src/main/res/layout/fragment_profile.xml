@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+                tools:context=".View.Fragments.UnreadChatsFragment">
+
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+
+
+            <android.support.design.widget.CoordinatorLayout
+                    android:id="@+id/topCL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+            >
+
+
+
+                <ImageView
+
+                        android:adjustViewBounds="true"
+                        android:id="@+id/profileTopImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/account_top_comp"
+                        android:layout_gravity="top"
+                        android:scaleType="fitXY"
+                        android:layout_marginBottom="50dp"
+
+                />
+
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profileImage"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@mipmap/icon_username"
+                        app:civ_circle_background_color="@color/white"
+                        app:civ_border_width="0.1dp"
+                        app:civ_border_color="@color/darkGray"
+                        app:layout_anchor="@id/profileTopImage"
+                        app:layout_anchorGravity="bottom|center_horizontal" />
+
+
+                <ProgressBar
+                        android:id="@+id/progressBar"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:indeterminate="false"
+                        android:progressDrawable="@drawable/circular_progress_bar"
+                        android:background="@drawable/circle_shape"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:max="100"
+                        android:progress="0"
+                        app:layout_anchor="@id/profileTopImage"
+                        android:visibility="invisible"
+                        app:layout_anchorGravity="bottom|center_horizontal"
+                />
+
+
+                <TextView
+                        android:id="@+id/progressBarTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="%"
+                        android:textSize="13sp"
+                        android:textColor="@android:color/black"
+                        app:layout_anchor="@id/profileTopImage"
+                        android:visibility="invisible"
+                        app:layout_anchorGravity="bottom|center_horizontal"
+                />
+
+
+                <!--<ImageView-->
+
+                        <!--android:id="@+id/profileImage"-->
+                        <!--android:adjustViewBounds="true"-->
+                        <!--android:layout_width="100dp"-->
+                        <!--android:layout_height="100dp"-->
+                        <!--android:background="@drawable/background_profile_info"-->
+                        <!--android:src="@mipmap/icon_username"-->
+
+                        <!--app:layout_anchor="@id/profileTopImage"-->
+                        <!--app:layout_anchorGravity="bottom|center_horizontal"-->
+
+                <!--/>-->
+
+
+
+
+            </android.support.design.widget.CoordinatorLayout>
+
+
+            <TextView
+                    android:id="@+id/operatorName"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:layout_below="@id/topCL"
+                      android:text="@string/operator_name"
+                      android:gravity="center"
+                      android:layout_centerHorizontal="true"
+                      android:layout_marginTop="5dp"
+                    android:padding="2dp"
+                    android:textSize="16sp"
+
+
+            />
+
+
+            <Switch
+                    android:id="@+id/switchOnOff"
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/operatorName"
+                    android:drawableStart="@mipmap/icon_on_off"
+                    android:background="@drawable/profile_items_back"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/notification_is_off"
+                    android:textColor="@color/white"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="10dp"
+
+                    android:visibility="visible"
+                    android:elevation="2dp"
+                    android:layout_height="wrap_content"
+                    tools:targetApi="lollipop"/>
+
+
+            <Button
+                    android:id="@+id/editUserInfoButt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/switchOnOff"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="start|center_vertical"
+                    android:drawableStart="@mipmap/icon_edit"
+                    android:drawableEnd="@mipmap/icon_right_arrow"
+                    android:drawableTint="@color/white"
+                    android:background="@drawable/profile_items_back"
+                    android:text="@string/edit_user_info_text"
+                    android:textColor="@color/white"
+                    android:visibility="gone"
+                    android:textAllCaps="false"
+            />
+
+
+            <Button
+                    android:id="@+id/editPassButt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/editUserInfoButt"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:drawableEnd="@mipmap/icon_right_arrow"
+                    android:drawableTint="@color/white"
+                    android:gravity="start|center_vertical"
+                    android:drawableStart="@mipmap/icon_edit_pass"
+                    android:background="@drawable/profile_items_back"
+                    android:text="@string/edit_pass_text"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+            />
+
+
+            <Button
+                    android:id="@+id/exitButt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/editPassButt"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="start|center_vertical"
+                    android:drawableStart="@mipmap/icon_exit"
+                    android:background="@drawable/selector_enter_background"
+                    android:text="@string/log_out_text"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+            />
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
